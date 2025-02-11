@@ -8,9 +8,7 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
-
-How does your implementation work?
+No ha habido implementaciones.
 
 ### Code Repository and Branch
 
