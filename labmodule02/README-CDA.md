@@ -19,13 +19,13 @@ URL: https://github.com/saraportto/python-components/tree/labmodule02
 
 ### Unit Tests Executed
 
-- ConfigUtilTest
-- SystemCpuUtilTaskTest
-- SystemMemUtilTaskTest
+- ConfigUtilTest.py
+- SystemCpuUtilTaskTest.py
+- SystemMemUtilTaskTest.py
 
 ### Integration Tests Executed
 
-- ConstrainedDeviceAppTest
-- SystemPerformanceManagerTest
+- ConstrainedDeviceAppTest.py
+- SystemPerformanceManagerTest.py
 
 EOF.
