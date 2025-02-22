@@ -6,11 +6,9 @@ Be sure to implement all the PIOT-GDA-* issues (requirements).
 
 ### Description
 
-No ha habido ninguna implementación.
+There were no implementations.
 
 ### Code Repository and Branch
-
-NOTE: Be sure to include the branch.
 
 URL: https://github.com/saraportto/java-components/tree/labmodule01
 
