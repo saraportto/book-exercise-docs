@@ -6,38 +6,28 @@ Be sure to implement all the PIOT-GDA-* issues.
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This implementation aims to add functionality to the SystemPerformanceManager class, by defining some of its methods, which call the SystemCpuUtilTask and SystemMemUtilTask classes to correctly manage the system’s performance. To facilitate this, getters and setters for BaseSystemUtilTask are defined in order for SystemCpuUtilTask and SystemMemUtilTask to inherit from it. Moreover, the getTelemetryValue method is overridden in each of those two classes.  
 
-What does your implementation do? 
+Then, the SystemPerformanceManager class is instantiated in the GatewayDeviceApp, so that the GDA can properly handle the system’s performance.
 
-How does your implementation work?
+A change had to be made in the BaseSystemUtilTask class, as its private Logger had to be switched to a protected Logger due to the errors thrown by SystemCpuUtilTask and SystemMemUtilTask tests when the Logger was private (it wasn’t accessible for them).
+
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
+URL: https://github.com/saraportto/java-components/tree/labmodule02
 
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
+- ConfigUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
-- 
-- 
-- 
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- GatewayDeviceAppTest
+- SystemPerformanceManagerTest
 
 EOF.
