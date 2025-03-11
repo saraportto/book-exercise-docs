@@ -6,35 +6,25 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This module implements the methods from the sensor emulation module (humidity, pressure, and temperature), inheriting from BaseSensorSimTask. Each class retrieves data from the corresponding sensor and stores it in SensorData for further processing.
 
-What does your implementation do? 
+Additionally, HumidifierEmulatorTask, HvacEmulatorTask, and LedDisplayEmulatorTask (which derive from BaseActuatorSimTask and emulate actuators) manage the activation and deactivation of the actuator by displaying messages on the SenseHAT LED display in emulator mode.
 
-How does your implementation work?
+The SenseHAT emulator functionality was also added to the SensorAdapterManager class, allowing dynamic loading of temperature, humidity, and pressure sensor emulators when the configuration enables it. Furthermore, if no emulators are used, _initEnvironmentalSensorTasks is called. Finally, it processes commands for actuators based on their type and location, updating the corresponding actuator if it matches locationID.
+
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
+URL: https://github.com/saraportto/python-components/tree/labmodule04
 
 
 ### Unit Tests Executed
-
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
 
 - 
 - 
 - 
 
 ### Integration Tests Executed
-
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 - 
 - 
