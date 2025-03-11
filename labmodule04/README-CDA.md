@@ -20,14 +20,34 @@ URL: https://github.com/saraportto/python-components/tree/labmodule04
 
 ### Unit Tests Executed
 
-- 
-- 
-- 
+- ConfigUtilTest.py
+- SystemCpuUtilTaskTest.py
+- SystemMemUtilTaskTest.py
+- ActuatorDataTest.py
+- SensorDataTest.py
+- SystemPerformanceDataTest.py
+- HumiditySensorSimTaskTest.py
+- PressureSensorSimTaskTest.py
+- TemperatureSensorSimTaskTest.py
+- HumidifierActuatorSimTaskTest.py
+- HvacActuatorSimTaskTest.py
+- All unit tests in part02 (except for DataUtiltest.py, which fails)
 
 ### Integration Tests Executed
 
-- 
-- 
-- 
+- ConstrainedDeviceAppTest.py
+- SystemPerformanceManagerTest.py
+- SensorAdapterManagerTest.py
+- ActuatorAdapterManagerTest.py
+- DeviceDataManagerNoCommsTest.py
+- SenseHatEmulatorQuickTest.py
+- HumidityEmulatorTaskTest.py
+- PressureEmulatorTaskTest.py
+- TemperatureEmulatorTaskTest.py
+- HumidifierEmulatorTaskTest.py
+- HvacEmulatorTaskTest.py
+- LedDisplayEmulatorTaskTest.py
+- SensorEmulatorManagerTest.py
+- ActuatorEmulatorManagerTest.py
 
 EOF.
