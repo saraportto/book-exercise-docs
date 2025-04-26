@@ -12,6 +12,19 @@ What does your implementation do?
 
 How does your implementation work?
 
+
+**This exercise lets you choose whether you'll implement your CoAP server in your CDA or your GDA. Lab Module 09 will implement the CoAP client as part of the other application.
+
+NOTE: You can choose to implement the CoAP server and client in both, of course.
+
+In the appropriate README.md for this exercise, your output needs to include the following:
+
+- Log output for the CoAP Discovery issued by the integration tests listed in either PIOT-CDA-08-002 or PIOT-GDA-08-002.
+- Log output for the CoAP GET issued by the integration tests listed in either PIOT-CDA-08-003 or PIOT-GDA-08-003.
+
+NOTE: You need to show that your own GDA CoAP server has all of the `ResourceNameEnum` resources registered appropriately and are accessible via both Discovery and a simple GET request. The resource handler implementation only needs to log a simple message indicating the GET was successful.
+**
+
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
