@@ -12,10 +12,10 @@ What does your implementation do?
 
 How does your implementation work?
 
-### CoAP Discovery integration tests PIOT-GDA-08-002
+### CoAP Discovery: integration tests PIOT-GDA-08-002
 Log output for the CoAP Discovery issued by the integration tests listed in either PIOT-CDA-08-002 or PIOT-GDA-08-002.
 
-### CoAP GET integration tests PIOT-CDA-08-003
+### CoAP GET: integration tests PIOT-CDA-08-003
 Log output for the CoAP GET issued by the integration tests listed in either PIOT-CDA-08-003 or PIOT-GDA-08-003.
 
 ### Code Repository and Branch
