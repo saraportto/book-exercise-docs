@@ -6,6 +6,7 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 ### Description
 
+**OPTION A CHOSEN**
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
