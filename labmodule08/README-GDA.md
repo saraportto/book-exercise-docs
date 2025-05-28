@@ -53,8 +53,8 @@ URL: https://github.com/saraportto/java-components/tree/labmodule08
 - DeviceDataManagerNoCommsTest
 - MqttClientConnectorTest
 - MqttClientControlPacketTest
-- UpdateResourceHandlerTest (fails)
-- GetActuatorCommandResourceHandlerTest.java (fails)
+- UpdateResourceHandlerTest
+- GetActuatorCommandResourceHandlerTest.java
 - CoapServerGatewayTest
 
 
