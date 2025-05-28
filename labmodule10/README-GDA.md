@@ -6,39 +6,43 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+MqttClientConnector was updated to support authentication (username/password) and secure connections (TLS) using certificates, with all settings made configurable via the properties file.
 
-What does your implementation do? 
+Automatic subscriptions to the CDA topics (SensorData, SystemPerformanceData, and ActuatorDataResponse) were added directly within the connectComplete() method, using Option 1 (a single callback handler).
 
-How does your implementation work?
+In DeviceDataManager, duplicate subscription logic was removed from startManager() to delegate subscription handling entirely to MqttClientConnector.
+
+Finally, logic was implemented on the GDA side to analyze humidity data received from the CDA. If values are detected to be outside the defined thresholds for a certain period, an actuator command (ON/OFF) is generated and sent to the CDA. In addition, sensor information is logged and transmitted for upstream processing or storage.
+
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
+URL: https://github.com/saraportto/java-components/tree/labmodule10
 
 
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- ConfigUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
+- ActuatorDataTest
+- SensorDataTest
+- SystemPerformanceDataTest
+- SystemStateDataTest
+- DataUtilTest
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- GatewayDeviceAppTest
+- SystemPerformanceManagerTest
+- DataIntegrationTest
+- DeviceDataManagerNoCommsTest
+- MqttClientConnectorTest
+- MqttClientControlPacketTest
+- UpdateResourceHandlerTest
+- GetActuatorCommandResourceHandlerTest
+- CoapServerGatewayTest
+- DeviceDataManagerSimpleCdaActuationTest
 
 EOF.
