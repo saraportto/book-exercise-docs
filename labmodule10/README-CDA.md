@@ -52,7 +52,7 @@ URL: https://github.com/saraportto/python-components/tree/labmodule10
 - ActuatorEmulatorManagerTest.py
 - DataIntegrationTest.py
 - MqttClientConnectorTest.py
-- MqttClientControlPacketTest.py (fails)
 - CoapClientConnectorTest.py
+- DeviceDataManagerIntegrationTest.py
 
 EOF.
