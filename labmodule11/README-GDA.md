@@ -46,5 +46,6 @@ URL: URL: https://github.com/saraportto/java-components/tree/labmodule11
 - GetActuatorCommandResourceHandlerTest
 - CoapServerGatewayTest
 - DeviceDataManagerSimpleCdaActuationTest
+- CloudClientConnectorTest
 
 EOF.
